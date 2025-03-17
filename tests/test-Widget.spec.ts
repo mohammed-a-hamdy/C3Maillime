@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
 
-const baseURL = 'file:///D:/Upwork/C3Maillime/widgetWrapper.html';
+const baseURL = 'https://c3-maillime.vercel.app/';
 
 test('Send a message', async ({ page }) => {
   const randomMessage = faker.lorem.sentence();
