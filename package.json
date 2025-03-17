@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "dependencies": {
+    "playwright": "^1.51.1",
+    "@faker-js/faker": "^8.4.0",
+    "tempy": "^3.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.10"
+  },
+  "scripts": {
+    "test": "playwright test"}
+}

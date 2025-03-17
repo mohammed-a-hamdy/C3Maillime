@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailime Script Host</title>
+</head>
+<body>
+    <h1>Welcome to Mailime Chat</h1>
+    <p>The chat widget should load automatically.</p>
+    
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://c3.mailime.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.C3SDK.run({
+            websiteToken: 'DAtQcAB2nUZYkDZJnfx2n5LA',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+</body>
+</html>
